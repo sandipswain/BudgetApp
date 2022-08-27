@@ -30,6 +30,7 @@ function AddExpenseForm() {
             className="form-control"
             id="name"
             value={name}
+            autoComplete="off"
             onChange={(e) => setName(e.target.value)}
           />
         </div>
@@ -42,6 +43,7 @@ function AddExpenseForm() {
             className="form-control"
             id="cost"
             value={cost}
+            autoComplete="off"
             onChange={(e) => setCost(e.target.value)}
           />
         </div>

@@ -27,6 +27,7 @@ function ExpenseList() {
         placeholder="Type to search..."
         className="my-lg-2 form-control"
         id="search"
+        autoComplete="off"
         onChange={handleChange}
       />
       <ul className="list-group">

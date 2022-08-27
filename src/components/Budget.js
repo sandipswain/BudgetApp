@@ -14,11 +14,11 @@ function Budget() {
     setEditable(false);
   };
   return (
-    <div className="alert alert-secondary d-flex justify-content-between align-items-center">
+    <div className="alert alert-secondary d-flex justify-content-between align-items-center p-3">
       {!editable ? (
         <>
           <span>Budget: ${budget}</span>
-          <button className="btn btn-primary" onClick={handleEdit}>
+          <button className="btn btn-primary p-0 w-25" onClick={handleEdit}>
             Edit
           </button>
         </>
@@ -32,7 +32,10 @@ function Budget() {
             value={newBudget}
             onChange={(e) => setNewBudget(e.target.value)}
           />
-          <button className="btn btn-primary ms-4" onClick={handleSave}>
+          <button
+            className="btn btn-primary ms-4 p-0 w-25"
+            onClick={handleSave}
+          >
             Save
           </button>
         </>
